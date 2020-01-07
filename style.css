@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Tomorrow&display=swap');
+ 
+header{
+  box-sizing: border-box;
+  margin: o;
+  padding: 0;
+  background-color: rebeccapurple;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+li, a, button {
+  font-family: "Tommorrow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.logo{
+cursor: pointer;
+width: 100px;
+height: 100px;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: #0088a9
+}
+
+button{
+  padding: 9px;
+  background-color: royalblue;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+ body {
+   font-family: 'Libre Baskerville', serif;
+   font-size: 20px;
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+   hyphens: auto;
+   text-rendering: optimizeLegibility;
+ }
+
+ 
+
+
+
+ .round-img {
+   border-radius: 200px;
+   box-sizing: border-box;
+   border: 3px solid rebeccapurple;
+ }
+
+ .main {
+   margin-top: 40px;
+ }
+
+ h2 {
+   display: inline-block;
+   color: #999999;
+   font-family: arial, sans-serif;
+   font-size: 30px;
+   font-weight: bold;
+   margin-top: 65px;
+   margin-bottom: 1px;
+ }
+
+ p {
+   margin: 20px 250px;
+   text-align: justify;
+ }
+
+ .divcenter {
+   text-align: center;
+ }
