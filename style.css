@@ -2,13 +2,13 @@
 header {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   background-color: rebeccapurple;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 4%;
+  padding: 1em;
   width: 100%;
   top:0;
   position: fixed;
@@ -24,8 +24,8 @@ header li, a, button {
 
 .logo {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .nav_links {
@@ -34,7 +34,7 @@ header li, a, button {
 
 .nav_links li {
   display: inline-block;
-  padding: 2% 2%;
+  padding: 1em;
 }
 
 .nav_links li a {
