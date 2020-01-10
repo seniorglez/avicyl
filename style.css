@@ -8,10 +8,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 1% 4%;
+  width: 100%;
+  top:0;
+  position: fixed;
 }
 
-li, a, button {
+header li, a, button {
   font-family: "Tommorrow", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -21,8 +24,8 @@ li, a, button {
 
 .logo {
   cursor: pointer;
-  width: 80px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .nav_links {
@@ -31,7 +34,7 @@ li, a, button {
 
 .nav_links li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 2% 2%;
 }
 
 .nav_links li a {
@@ -82,7 +85,7 @@ h2 {
 }
 
 .main p {
-  margin: 20px 250px;
+  margin: 1% 17%;
   text-align: justify;
 }
 
@@ -94,7 +97,7 @@ h2 {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 21%;
   margin: auto;
   text-align: center;
   display: inline-block;
