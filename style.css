@@ -2,13 +2,13 @@
 header {
   box-sizing: border-box;
   margin: 0;
+  padding: 0em 5em;
   background-color: rebeccapurple;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
   width: 100%;
   top:0;
   position: fixed;
@@ -52,6 +52,10 @@ header button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  opacity: 0.6;
 }
 
 body {
