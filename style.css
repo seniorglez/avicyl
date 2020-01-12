@@ -17,15 +17,15 @@ header {
 header li, a, button {
   font-family: "Tommorrow", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   color: #edf0f1;
   text-decoration: none;
 }
 
 .logo {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 15rem;
+  height: 7rem;
 }
 
 .nav_links {
@@ -66,6 +66,13 @@ body {
   padding: 0;
   hyphens: auto;
   text-rendering: optimizeLegibility;
+}
+.biglogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 50rem;
 }
 
 .round-img {
