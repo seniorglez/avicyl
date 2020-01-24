@@ -2,7 +2,7 @@
 header {
   box-sizing: border-box;
   margin: 0;
-  padding: 0em 5em;
+  padding: 0em 1em;
   background-color: rebeccapurple;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -46,10 +46,10 @@ header li, a, button {
 }
 
 header button {
-  padding: 9px;
+  padding: 1em;
   background-color: royalblue;
   border: none;
-  border-radius: 50px;
+  border-radius: 30em;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -103,7 +103,9 @@ h2 {
 .divcenter {
   text-align: center;
 }
-
+.divcenter h2{
+  margin-top: 5em;
+}
 /*profile cards*/
 
 .card {
