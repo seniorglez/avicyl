@@ -2,7 +2,7 @@
 header {
   box-sizing: border-box;
   margin: 0;
-  padding: 0em 5em;
+  padding: 0em 2em;
   background-color: rebeccapurple;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -20,12 +20,13 @@ header li, a, button {
   font-size: 1rem;
   color: #edf0f1;
   text-decoration: none;
+ 
 }
 
 .logo {
   cursor: pointer;
-  width: 15rem;
-  height: 7rem;
+  width: 13rem;
+  height: 5rem;
 }
 
 .nav_links {
@@ -34,7 +35,9 @@ header li, a, button {
 
 .nav_links li {
   display: inline-block;
-  padding: 1em;
+  padding: 1.5em;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .nav_links li a {
@@ -46,7 +49,7 @@ header li, a, button {
 }
 
 header button {
-  padding: 1em;
+  padding: 0.7em;
   background-color: royalblue;
   border: none;
   border-radius: 30em;
