@@ -146,3 +146,10 @@ section p {
   display: flex;
   justify-content: space-between;
 }
+
+
+footer{
+  margin: 7em;
+  text-align: center;
+  font-size: 10px;
+}
