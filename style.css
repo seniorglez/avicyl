@@ -98,9 +98,17 @@ h2 {
   margin-bottom: 1px;
 }
 
-section p {
+section:first-child p {
   margin: 1% 17%;
+ 
+}
+section p{
   text-align: justify;
+  margin: 1% 17%;
+}
+
+section h5 {
+  text-align: center;
 }
 
 .divcenter {
