@@ -148,6 +148,7 @@ section h5 {
 }
 .card h6{
   color: rebeccapurple;
+  font-weight: normal;
 }
 .row {
   align-items: center;
