@@ -15,15 +15,31 @@
 </head>
 
 <body>
-
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--A fake / hidden checkbox is used as click reciever,so you can use the :checked selector on it.-->
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <li><a href="#aboutus">¿Qué es Avicyl?</a></li>
+                <li><a href="#joinus">Únete</a></li>
+                <li><a href="#" id="documents">Documentos</a></li>
+                <li><a href="" id="posts">Posts</a></li>
+          </ul>
+        </div>
+      </nav>
     <header>
+          <!--normal navbar-->
         <a href="#home"><img class="logo" src="imgs/smallogo.png" alt="logo"></a>
         <nav>
             <ul class="nav_links">
                 <li><a href="#aboutus">¿Qué es Avicyl?</a></li>
                 <li><a href="#joinus">Únete</a></li>
-                <li><a href="#">Documentos</a></li>
-                <li><a href="">Noticias</a></li>
+                <li><a href="#" id="documents">Documentos</a></li>
+                <li><a href="" id="posts">Posts</a></li>
             </ul>
         </nav>
         <a class="cta" href="#contact"><button>Contacto</button></a>

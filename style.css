@@ -1,208 +1,407 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Tomorrow&display=swap');
-      /*header*/
-      header {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0em 2em;
-        background-color: rebeccapurple;
-        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        top:0;
-        position: fixed;
-      }
-      
-      header li, a, button {
-        font-family: "Tommorrow", sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        color: #edf0f1;
-        text-decoration: none;
-       
-      }
-      
-      .logo {
-        cursor: pointer;
-        width: 13rem;
-        height: 5rem;
-        display: none;
-      }
-      
-      .nav_links {
-        list-style: none;
-      }
-      
-      .nav_links li {
-        display: inline-block;
-        padding: 1.5em;
-        padding-bottom: 0;
-        padding-top: 0;
-      }
-      
-      .nav_links li a {
-        transition: all 0.3s ease 0s;
-      }
-      
-      .nav_links li a:hover {
-        color: #0088a9
-      }
-      
-      header button {
-        padding: 0.7em;
-        background-color: royalblue;
-        border: none;
-        border-radius: 30em;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-      }
-      
-      header button:hover {
-        opacity: 0.6;
-      }
-      
-      body {
-        font-family: 'Libre Baskerville', serif;
-        font-size: 3vw;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        hyphens: auto;
-        text-rendering: optimizeLegibility;
-      }
-      .biglogo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5rem;
-        width: 50rem;
-      }
-      
-      .round-img {
-        border-radius: 200px;
-        box-sizing: border-box;
-        border: 3px solid rebeccapurple;
-      }
-      
-      .main {
-        margin-top: 40px;
-      }
-      
-      h2 {
-        display: inline-block;
-        color: #999999;
-        font-family: arial, sans-serif;
-        font-size: 10vw;
-        font-weight: bold;
-        margin-top: 65px;
-        margin-bottom: 1px;
-      }
-      
-      section:first-child p {
-        margin: 1% 17%;
-       
-      }
-      section p{
-        text-align: justify;
-        margin: 1% 17%;
-      }
-      
-      section h5 {
-        text-align: center;
-      }
-      
-      .divcenter {
-        text-align: center;
-      }
-      .divcenter h2{
-        margin-top: 5em;
-      }
-      /*profile cards*/
-      
-      .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 21%;
-        margin: auto;
-        text-align: center;
-        display: block;
-        padding: 0;
-      }
-      
-      .title {
-        color: grey;
-        font-size: 20px;
-      }
-      
-      .card a {
-        text-decoration: none;
-        font-size: 22px;
-        color: rebeccapurple;
-      }
-      
-      .card a:hover {
-        opacity: 0.7;
-      }
-      
-      .card img {
-        width: 100%;
-      }
-      .card h6{
-        color: rebeccapurple;
-        font-weight: normal;
-      }
-      .row {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
-      
-      
-      footer{
-        margin: 7em;
-        text-align: center;
-        font-size: 10px;
-      }
-      
-      footer a{
-        color: rebeccapurple;
-        font-size: 10px;
-      }
+
+/*header*/
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0em 2em;
+  background-color: rebeccapurple;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+}
+
+header li,
+a,
+button {
+  font-family: "Tommorrow", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #edf0f1;
+  text-decoration: none;
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+  width: 13rem;
+  height: 5rem;
+  display: none;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 1.5em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9
+}
+
+header button {
+  margin: 0;
+  padding: 0.7em;
+  background-color: royalblue;
+  border: none;
+  border-radius: 30em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  opacity: 0.6;
+}
+
+#documents {
+  display: none;
+}
+
+#posts {
+  display: none;
+}
+
+/*hamburger menu*/
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 25px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: royalblue;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * Hide the middle one.
+ */
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Last one should go the other direction
+ */
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  display: block;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  display: block;
+}
+
+#menu a {
+  color: rebeccapurple;
+  display: inline-block;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+/*=====================Body=============================*/
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  hyphens: auto;
+  text-rendering: optimizeLegibility;
+}
+
+.biglogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 15rem;
+
+}
+
+.round-img {
+  border-radius: 200px;
+  box-sizing: border-box;
+  border: 3px solid rebeccapurple;
+}
+
+.main {
+  margin-top: 40px;
+  align-self: center;
+}
+
+h2 {
+  display: inline-block;
+  color: #999999;
+  font-family: arial, sans-serif;
+  font-size: 10vw;
+  font-weight: bold;
+  margin-top: 65px;
+  margin-bottom: 1px;
+}
+
+section:first-child p {
+  margin: 1% 17%;
+
+}
+
+section p {
+  text-align: justify;
+  margin: 1% 17%;
+}
+
+section h5 {
+  text-align: center;
+}
+
+.divcenter {
+  text-align: center;
+}
+
+.divcenter h2 {
+  margin-top: 5em;
+}
+
+/*profile cards*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 21%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 0;
+}
+
+.title {
+  color: grey;
+  font-size: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: rebeccapurple;
+}
+
+.card a:hover {
+  opacity: 0.7;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h6 {
+  color: rebeccapurple;
+  font-weight: normal;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer {
+  margin: 7em;
+  text-align: center;
+  font-size: 10px;
+}
+
+footer a {
+  color: rebeccapurple;
+  font-size: 10px;
+}
+
+
 /*==========  Mobile First Method  ==========*/
 
-    /* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .biglogo {
+    width: 20rem;
+  }
+}
 
-    }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .biglogo {
+    width: 30rem;
+  }
 
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
+}
 
-    }
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .biglogo {
+    width: 40rem;
+  }
 
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
+  #posts {
+    display: inline-block;
+  }
 
-    }
+  #documents {
+    display: inline-block;
+  }
 
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-      .logo {
-        display: inline-block;
-      }
+  header li,
+  a,
+  button {
+    display: inline-block;
+  }
 
-      body {
-        font-size: 1.2vw;
-      }
+  header {
+    display: flex;
+  }
 
-      .card {
-        display: inline-block;
-      }
-    }
+  /*hidden hamburger*/
+  #menuToggle {
+    display: none;
+  }
+  
+  #menuToggle a input span {
+    display: none;
+  }
+  #menu {
+display: none;
+  }
+  
+  #menu li {
+    display: none;
+  }
+}
 
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .logo {
+    display: inline-block;
+  }
 
-    }
+  body {
+    font-size: 1.2vw;
+  }
 
+  .card {
+    display: inline-block;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
