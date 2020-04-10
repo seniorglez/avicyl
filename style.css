@@ -1,170 +1,208 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Tomorrow&display=swap');
-/*header*/
-header {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0em 2em;
-  background-color: rebeccapurple;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  top:0;
-  position: fixed;
-}
+      /*header*/
+      header {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0em 2em;
+        background-color: rebeccapurple;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        top:0;
+        position: fixed;
+      }
+      
+      header li, a, button {
+        font-family: "Tommorrow", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #edf0f1;
+        text-decoration: none;
+       
+      }
+      
+      .logo {
+        cursor: pointer;
+        width: 13rem;
+        height: 5rem;
+        display: none;
+      }
+      
+      .nav_links {
+        list-style: none;
+      }
+      
+      .nav_links li {
+        display: inline-block;
+        padding: 1.5em;
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+      
+      .nav_links li a {
+        transition: all 0.3s ease 0s;
+      }
+      
+      .nav_links li a:hover {
+        color: #0088a9
+      }
+      
+      header button {
+        padding: 0.7em;
+        background-color: royalblue;
+        border: none;
+        border-radius: 30em;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+      }
+      
+      header button:hover {
+        opacity: 0.6;
+      }
+      
+      body {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 3vw;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        hyphens: auto;
+        text-rendering: optimizeLegibility;
+      }
+      .biglogo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        width: 50rem;
+      }
+      
+      .round-img {
+        border-radius: 200px;
+        box-sizing: border-box;
+        border: 3px solid rebeccapurple;
+      }
+      
+      .main {
+        margin-top: 40px;
+      }
+      
+      h2 {
+        display: inline-block;
+        color: #999999;
+        font-family: arial, sans-serif;
+        font-size: 10vw;
+        font-weight: bold;
+        margin-top: 65px;
+        margin-bottom: 1px;
+      }
+      
+      section:first-child p {
+        margin: 1% 17%;
+       
+      }
+      section p{
+        text-align: justify;
+        margin: 1% 17%;
+      }
+      
+      section h5 {
+        text-align: center;
+      }
+      
+      .divcenter {
+        text-align: center;
+      }
+      .divcenter h2{
+        margin-top: 5em;
+      }
+      /*profile cards*/
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 21%;
+        margin: auto;
+        text-align: center;
+        display: block;
+        padding: 0;
+      }
+      
+      .title {
+        color: grey;
+        font-size: 20px;
+      }
+      
+      .card a {
+        text-decoration: none;
+        font-size: 22px;
+        color: rebeccapurple;
+      }
+      
+      .card a:hover {
+        opacity: 0.7;
+      }
+      
+      .card img {
+        width: 100%;
+      }
+      .card h6{
+        color: rebeccapurple;
+        font-weight: normal;
+      }
+      .row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      
+      footer{
+        margin: 7em;
+        text-align: center;
+        font-size: 10px;
+      }
+      
+      footer a{
+        color: rebeccapurple;
+        font-size: 10px;
+      }
+/*==========  Mobile First Method  ==========*/
 
-header li, a, button {
-  font-family: "Tommorrow", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #edf0f1;
-  text-decoration: none;
- 
-}
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
 
-.logo {
-  cursor: pointer;
-  width: 13rem;
-  height: 5rem;
-}
+    }
 
-.nav_links {
-  list-style: none;
-}
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
 
-.nav_links li {
-  display: inline-block;
-  padding: 1.5em;
-  padding-bottom: 0;
-  padding-top: 0;
-}
+    }
 
-.nav_links li a {
-  transition: all 0.3s ease 0s;
-}
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
 
-.nav_links li a:hover {
-  color: #0088a9
-}
+    }
 
-header button {
-  padding: 0.7em;
-  background-color: royalblue;
-  border: none;
-  border-radius: 30em;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      .logo {
+        display: inline-block;
+      }
 
-header button:hover {
-  opacity: 0.6;
-}
+      body {
+        font-size: 1.2vw;
+      }
 
-body {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 20px;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  hyphens: auto;
-  text-rendering: optimizeLegibility;
-}
-.biglogo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5rem;
-  width: 50rem;
-}
+      .card {
+        display: inline-block;
+      }
+    }
 
-.round-img {
-  border-radius: 200px;
-  box-sizing: border-box;
-  border: 3px solid rebeccapurple;
-}
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
 
-.main {
-  margin-top: 40px;
-}
+    }
 
-h2 {
-  display: inline-block;
-  color: #999999;
-  font-family: arial, sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 65px;
-  margin-bottom: 1px;
-}
-
-section:first-child p {
-  margin: 1% 17%;
- 
-}
-section p{
-  text-align: justify;
-  margin: 1% 17%;
-}
-
-section h5 {
-  text-align: center;
-}
-
-.divcenter {
-  text-align: center;
-}
-.divcenter h2{
-  margin-top: 5em;
-}
-/*profile cards*/
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 21%;
-  margin: auto;
-  text-align: center;
-  display: inline-block;
-  padding: 0;
-}
-
-.title {
-  color: grey;
-  font-size: 20px;
-}
-
-.card a {
-  text-decoration: none;
-  font-size: 22px;
-  color: rebeccapurple;
-}
-
-.card a:hover {
-  opacity: 0.7;
-}
-
-.card img {
-  width: 100%;
-}
-.card h6{
-  color: rebeccapurple;
-  font-weight: normal;
-}
-.row {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-footer{
-  margin: 7em;
-  text-align: center;
-  font-size: 10px;
-}
-
-footer a{
-  color: rebeccapurple;
-  font-size: 10px;
-}
