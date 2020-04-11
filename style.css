@@ -234,14 +234,8 @@ body {
 
 }
 
-.round-img {
-  border-radius: 200px;
-  box-sizing: border-box;
-  border: 3px solid rebeccapurple;
-}
-
 .main {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   align-self: center;
 }
 
@@ -249,9 +243,8 @@ h2 {
   display: inline-block;
   color: #999999;
   font-family: arial, sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: bold;
-  margin-top: 65px;
   margin-bottom: 1px;
 }
 
@@ -272,9 +265,10 @@ section h5 {
 .divcenter {
   text-align: center;
 }
+/*To skip the navbar*/
 
 .divcenter h2 {
-  margin-top: 5em;
+  margin-top: 6rem;
 }
 
 /*profile cards*/
