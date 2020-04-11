@@ -367,6 +367,9 @@ footer a {
     min-height: 0rem;
   }
 
+  h2{
+    font-size: 3.5vw;
+  }
   /*hidden hamburger*/
   #menuToggle {
     display: none;
