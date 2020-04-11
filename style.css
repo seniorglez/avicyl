@@ -11,6 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-height: 4rem;
   top: 0;
   position: fixed;
   display: flex;
@@ -75,7 +76,7 @@ header button:hover {
   display: none;
 }
 
-/*hamburger menu*/
+/*=============================hamburger menu=================================*/
 #menuToggle {
   display: block;
   position: fixed;
@@ -102,8 +103,8 @@ header button:hover {
 
 #menuToggle input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -123,8 +124,8 @@ header button:hover {
  */
 #menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 2rem;
+  height: 0.25rem;
   margin-bottom: 5px;
   position: relative;
 
@@ -233,14 +234,8 @@ body {
 
 }
 
-.round-img {
-  border-radius: 200px;
-  box-sizing: border-box;
-  border: 3px solid rebeccapurple;
-}
-
 .main {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   align-self: center;
 }
 
@@ -248,9 +243,8 @@ h2 {
   display: inline-block;
   color: #999999;
   font-family: arial, sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: bold;
-  margin-top: 65px;
   margin-bottom: 1px;
 }
 
@@ -271,9 +265,10 @@ section h5 {
 .divcenter {
   text-align: center;
 }
+/*To skip the navbar*/
 
 .divcenter h2 {
-  margin-top: 5em;
+  margin-top: 6rem;
 }
 
 /*profile cards*/
@@ -369,8 +364,12 @@ footer a {
 
   header {
     display: flex;
+    min-height: 0rem;
   }
 
+  h2{
+    font-size: 3.5vw;
+  }
   /*hidden hamburger*/
   #menuToggle {
     display: none;
